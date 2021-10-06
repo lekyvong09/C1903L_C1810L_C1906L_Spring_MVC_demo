@@ -10,6 +10,8 @@ public class Student {
 
     private LinkedHashMap<String, String> countryOptions;
 
+    private String favoriteSport;
+
     public Student() {
         countryOptions = new LinkedHashMap<>();
         countryOptions.put("BR", "Brazil");
@@ -44,5 +46,13 @@ public class Student {
 
     public LinkedHashMap<String, String> getCountryOptions() {
         return countryOptions;
+    }
+
+    public String getFavoriteSport() {
+        return favoriteSport;
+    }
+
+    public void setFavoriteSport(String favoriteSport) {
+        this.favoriteSport = favoriteSport;
     }
 }
