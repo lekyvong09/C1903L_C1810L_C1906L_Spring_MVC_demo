@@ -3,8 +3,7 @@ package com.ray.springdemo.mvc;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import javax.servlet.http.HttpServletRequest;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HelloWorldController {
@@ -20,8 +19,8 @@ public class HelloWorldController {
     }
 
     @RequestMapping("/processHelloFormVer2")
-    public String sayHello(HttpServletRequest request, Model model) {
-        String theName = request.getParameter("studentName");
+    public String sayHello(@RequestParam("studentName") String theName, Model model) {
+        //String theName = request.getParameter("studentName");
         theName = theName.toUpperCase();
 
         String result = "Hello " + theName;
