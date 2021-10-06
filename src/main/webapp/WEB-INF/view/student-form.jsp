@@ -28,6 +28,12 @@
         Tennis <form:radiobutton path="favoriteSport" value="Tennis" />
         Boxing <form:radiobutton path="favoriteSport" value="Boxing" />
         <br><br>
+        Programming Language:
+        Java <form:checkbox path="programmingLanguage" value="Java" />
+        PHP <form:checkbox path="programmingLanguage" value="PHP" />
+        C# <form:checkbox path="programmingLanguage" value="C#" />
+        Javascript <form:checkbox path="programmingLanguage" value="Javascript" />
+        <br><br>
 
         <input type="submit" value="Submit"/>
     </form:form>

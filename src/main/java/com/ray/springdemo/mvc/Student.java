@@ -12,6 +12,8 @@ public class Student {
 
     private String favoriteSport;
 
+    private String programmingLanguage;
+
     public Student() {
         countryOptions = new LinkedHashMap<>();
         countryOptions.put("BR", "Brazil");
@@ -54,5 +56,13 @@ public class Student {
 
     public void setFavoriteSport(String favoriteSport) {
         this.favoriteSport = favoriteSport;
+    }
+
+    public String getProgrammingLanguage() {
+        return programmingLanguage;
+    }
+
+    public void setProgrammingLanguage(String programmingLanguage) {
+        this.programmingLanguage = programmingLanguage;
     }
 }
