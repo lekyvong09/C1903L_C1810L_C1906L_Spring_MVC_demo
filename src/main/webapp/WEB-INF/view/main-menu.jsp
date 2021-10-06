@@ -12,5 +12,7 @@
 </head>
 <body>
     <h1>Spring MVC demo - home page</h1>
+    <hr>
+    <a href="hello">Hello World form</a>
 </body>
 </html>
